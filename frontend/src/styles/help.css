@@ -1,0 +1,184 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Playfair Display', serif;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.help-gif {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.help-container {
+  color: #000000;
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 100px;
+  margin-top: 0px;
+  margin-bottom: -70px;
+}
+
+.columns-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 450px;
+  padding: 100px;
+  box-sizing: border-box;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+}
+
+.column:first-child {
+  margin-left: 400px;
+}
+
+.section {
+  margin-bottom: 30px;
+  min-height: 150px;
+}
+
+.delivery-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.delivery-section--underline {
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.delivery-section--underline::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 8%;
+  height: 2px;
+  border-bottom: 2px solid #000;
+}
+
+.section-link {
+  margin-top: 10px;
+}
+
+.section-link a {
+  color: #000;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.delivery-icon {
+  font-size: 20px;
+}
+
+.contact-text {
+  color: #000000;
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 100px;
+  margin-top: 0px;
+}
+
+.contact {
+  color: #000000;
+  font-weight: bold;
+  margin: 0;
+  /* Bỏ margin để căn giữa */
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Căn giữa nội dung */
+}
+
+
+.contact-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* Phân bố đều các cột */
+  width: 100%;
+  max-width: 1200px;
+  /* Giới hạn chiều rộng */
+  padding: 0 20px;
+  /* Khoảng cách hai bên */
+  box-sizing: border-box;
+}
+
+.contact-column {
+  flex: 1;
+  /* Mỗi cột chiếm đều không gian */
+  display: flex;
+  justify-content: center;
+  /* Căn giữa nội dung trong cột */
+  padding: 0 15px;
+  /* Khoảng cách giữa các cột */
+  min-width: 200px;
+  /* Đảm bảo cột không quá nhỏ */
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-icon {
+  font-size: 50px;
+  /* Tăng kích thước icon để giống hình */
+  margin-bottom: 15px;
+  color: #000;
+  /* Màu icon giống hình */
+}
+
+.contact-item p {
+  font-size: 18px;
+  /* Giảm kích thước chữ để giống hình */
+  line-height: 1.4;
+  /* Khoảng cách dòng nhỏ hơn */
+  margin: 0;
+  color: #333;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  /* Không in đậm để giống hình */
+}
+
+/* Responsive cho phần contact */
+@media (max-width: 768px) {
+  .contact {
+    padding: 20px;
+  }
+
+
+
+  .contact-columns {
+    flex-direction: column;
+    /* Xếp dọc trên mobile */
+    align-items: center;
+  }
+
+  .contact-column {
+    margin-bottom: 30px;
+    padding: 0;
+    min-width: unset;
+    /* Bỏ giới hạn chiều rộng trên mobile */
+  }
+}

@@ -1,0 +1,32 @@
+.success-container {
+  text-align: center;
+  padding: 80px 20px;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.success-container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.success-icon {
+  width: 350px;
+  margin: 20px auto;
+}
+
+.success-container h2 {
+  font-size: 28px;
+  margin-top: 10px;
+  font-weight: normal;
+}
+
+.shopping-link {
+  margin-top: 30px;
+  font-size: 18px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid black;
+  cursor: pointer;
+  padding: 8px 16px;
+  text-decoration: none;
+}

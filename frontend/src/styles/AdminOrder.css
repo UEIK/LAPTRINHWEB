@@ -1,0 +1,118 @@
+.admin-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.admin-sidebar {
+  width: 200px;
+  background-color: #f9f9f9;
+  padding: 30px 20px;
+  flex-shrink: 0;
+  border-right: 1px solid #eee;
+}
+
+.admin-sidebar h2 {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.admin-sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.admin-sidebar li {
+  margin: 15px 0;
+  color: #bbb;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.admin-sidebar .active {
+  background: #c1f4f4;
+  padding: 5px 10px;
+  color: black;
+  border-radius: 3px;
+}
+
+.admin-content {
+  flex: 1;
+  padding: 30px 40px;
+  background: #f5f0f0;
+}
+
+.admin-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #eee8e8;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.admin-header h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.admin-header p {
+  font-size: 20px;
+  color: #999;
+  margin-top: 5px;
+}
+
+.admin-icon {
+  font-size: 36px;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table thead {
+  background: black;
+  color: white;
+  font-size: 18px;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 18px 25px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.admin-table .even {
+  background-color: #f3f3f9;
+}
+
+.order-link {
+  color: #000000;
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.order-code {
+  color: #aaa;
+  font-style: italic;
+}
+
+.custom-select {
+  padding: 5px 5px;
+  font-size: 14px;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.custom-select:hover {
+  border-color: #888;
+}
+
+.custom-select:focus {
+  border-color: #555;
+}

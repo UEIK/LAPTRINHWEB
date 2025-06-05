@@ -1,0 +1,99 @@
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000000;
+  color: #fff;
+  padding: 10px 20px;
+  height: 30px;
+}
+
+.nav-links {
+  position: absolute;
+  left: 760px;
+  transform: translateX(-50%);
+  display: flex;
+  font-size: 16px;
+  gap: 70px;
+}
+
+.nav-links span {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.nav-links span:hover {
+  color: #888;
+}
+
+.nav-links .active {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.logo .active {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-icons .active {
+  color: #ffffff;
+}
+
+.nav-icons span {
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  position: absolute;
+  top: -2px;
+  right: 150px;
+  background-color: #0000;
+  border: none;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  z-index: 1000;
+}
+
+.search-input {
+  padding: 8px;
+  font-size: 14px;
+  width: 200px;
+}
+
+.search-button:hover {
+  color: #888;
+}
+
+.nav-icons .search-icon {
+  transition: color 0.3s ease;
+}
+
+.nav-icons .search-icon.active {
+  color: #888;
+}
+
+.close-search {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  padding: 0 0;
+  cursor: pointer;
+}
+
+.close-search:hover {
+  color: #888;
+}

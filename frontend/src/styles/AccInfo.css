@@ -1,0 +1,361 @@
+.acc-container {
+  min-height: 90vh;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.acc-card {
+  width: 100%;
+  max-width: 600px;
+  background: rgba(30, 30, 46, 0.95);
+  border-radius: 24px;
+  overflow: hidden;
+  animation: slideUp 0.6s ease-out;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.acc-header {
+  background: white;
+  padding: 3rem 2rem 1rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.acc-icon {
+  width: 100px;
+  height: 100px;
+  background: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  color: white;
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.acc-header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: black;
+  letter-spacing: -0.025em;
+}
+
+.acc-subtitle {
+  margin: 0;
+  font-size: 1rem;
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+.acc-content {
+  padding: 2rem;
+  background: white;
+}
+
+.acc-empty-state {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.acc-empty-icon {
+  width: 80px;
+  height: 80px;
+  background: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  color: #9ca3af;
+}
+
+.acc-empty-state h3 {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f8fafc;
+}
+
+.acc-info-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.acc-info-row:hover {
+  background: rgba(45, 45, 65, 0.8);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.acc-info-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.acc-label-icon {
+  width: 32px;
+  height: 32px;
+  background: black;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.acc-info-value {
+  margin-right: 8.5rem;
+}
+
+.acc-value-text {
+  font-size: 1.125rem;
+  color: black;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.acc-role-admin {
+  color: #10b981;
+  font-weight: 600;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(5, 150, 105, 0.2));
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.acc-actions {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 0.5rem;
+}
+
+.acc-actions-header {
+  margin-bottom: 1.5rem;
+}
+
+.acc-actions-header h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #f8fafc;
+}
+
+.acc-actions-header p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #94a3b8;
+}
+
+.acc-buttons-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+.acc-admin-button,
+.acc-logout-button,
+.acc-primary-button {
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.25rem 1.5rem;
+  border: none;
+  border-radius: 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.acc-admin-button {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.acc-admin-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
+  border-color: rgba(16, 185, 129, 0.5);
+}
+
+.acc-logout-button {
+  display: flex;
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(220, 38, 38, 0.1));
+  color: #ef4444;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 17px 60px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  /* 👈 thêm dòng này để canh giữa */
+}
+
+
+.acc-logout-button:hover {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.2), rgba(220, 38, 38, 0.2));
+  border-color: rgba(239, 68, 68, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(239, 68, 68, 0.3);
+}
+
+.acc-primary-button {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.acc-primary-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+  border-color: rgba(59, 130, 246, 0.5);
+}
+
+.acc-button-icon {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.acc-logout-button .acc-button-icon {
+  background: rgba(239, 68, 68, 0.2);
+}
+
+.acc-button-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.acc-button-title {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.acc-button-desc {
+  font-size: 0.875rem;
+  opacity: 0.8;
+  font-weight: 400;
+}
+
+.acc-message {
+  font-size: 1rem;
+  color: #94a3b8;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .acc-container {
+    padding: 1rem;
+  }
+
+  .acc-info-row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .acc-info-label {
+    margin-bottom: 0;
+    min-width: 180px;
+  }
+
+  .acc-info-value {
+    margin-left: 0;
+    flex: 1;
+    text-align: right;
+  }
+
+  .acc-buttons-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .acc-container {
+    padding: 1rem;
+  }
+
+  .acc-header {
+    padding: 2rem 1.5rem 1.5rem;
+  }
+
+  .acc-content {
+    padding: 1.5rem;
+  }
+
+  .acc-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .acc-icon {
+    width: 80px;
+    height: 80px;
+  }
+}

@@ -1,0 +1,13 @@
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page-container>* {
+    flex-shrink: 0;
+}
+
+.page-container .product-section {
+    flex-grow: 1;
+}

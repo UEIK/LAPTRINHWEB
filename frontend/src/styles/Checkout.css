@@ -1,0 +1,480 @@
+.checkout-page {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Loading State */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #000;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Address Section */
+.address-section {
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 0;
+}
+
+.address-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.address-item.selected {
+  background-color: #e0e0e0;
+
+}
+
+.address-item input[type="radio"] {
+  margin-top: 3px;
+  width: 16px;
+  height: 16px;
+}
+
+.address-details {
+  flex: 1;
+}
+
+.address-details strong {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.address-details div {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.no-address {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+.new-address-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.new-address-btn {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 12px 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.new-address-btn:hover {
+  background-color: #333;
+}
+
+/* Main Content Layout - Adjusted for wider summary */
+.main-content {
+  display: flex;
+  gap: 40px;
+  /* Increased gap */
+  align-items: flex-start;
+}
+
+.product-section-checkout {
+  flex: 2;
+  width: 60%;
+  /* Reduced to give more space to summary */
+  min-width: 0;
+  /* Allow shrinking if needed */
+}
+
+.summary-section {
+  flex: 1;
+  width: 40%;
+  /* Increased to accommodate wider summary */
+  min-width: 400px;
+  /* Ensure minimum width for summary */
+}
+
+/* Product Table - Enhanced but proportional */
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-table thead {
+  background-color: #000;
+  color: white;
+  height: 70px;
+}
+
+.product-table th {
+  padding: 12px 30px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 2px;
+  background-color: #000;
+  color: white;
+  white-space: nowrap;
+}
+
+.product-table th.product-column {
+  text-align: left;
+  padding-left: 50px;
+}
+
+.product-table th.size-column {
+  width: 100px;
+  text-align: center;
+  padding-left: 8px;
+  padding-right: 0px;
+}
+
+.product-table td {
+  padding: 14px 18px;
+  font-size: 18px;
+  border: none;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.product-table td.product-column {
+  text-align: left;
+}
+
+/* Column widths */
+.product-column {
+  width: 50%;
+}
+
+.size-column {
+  width: 15%;
+}
+
+.quantity-column {
+  width: 18%;
+}
+
+.price-column {
+  width: 17.5%;
+}
+
+.total-column {
+  width: 17.5%;
+}
+
+.product-cell {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.product-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.product-name {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.product-table tr {
+  background-color: white;
+  height: 90px;
+}
+
+.product-table tr.even {
+  background-color: #f0f0f0;
+}
+
+.empty-cart {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  padding: 30px;
+}
+
+/* Order Summary - Made much wider to prevent text wrapping */
+.summary-box {
+  margin-top: 15px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  min-width: 400px;
+  /* Increased minimum width significantly */
+  width: 100%;
+  max-width: 500px;
+  /* Added max width for better control */
+}
+
+.summary-header {
+  background-color: #000;
+  color: white;
+  padding: 18px 30px;
+  /* Increased horizontal padding */
+  text-align: center;
+  font-size: 18px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.summary-content {
+  padding: 25px 30px;
+  /* Increased horizontal padding */
+  min-width: 400px;
+  /* Ensure content area is wide enough */
+}
+
+.summary-content p {
+  margin-bottom: 15px;
+  font-size: 18px;
+  white-space: nowrap;
+  /* Prevent text wrapping */
+  overflow: visible;
+  /* Ensure text is visible */
+  line-height: 1.4;
+}
+
+.place-order-btn {
+  min-width: 480px;
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 18px 30px;
+  /* Increased horizontal padding */
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 15px;
+  white-space: nowrap;
+  /* Prevent button text wrapping */
+}
+
+.place-order-btn:hover {
+  background-color: #333;
+}
+
+.place-order-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .product-section,
+  .summary-section {
+    width: 100%;
+  }
+
+  .summary-content p {
+    white-space: normal;
+    /* Allow wrapping on mobile */
+  }
+}
+
+.address-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  /* background-color: #f8f8f8; */
+  transition: background-color 0.2s ease;
+}
+
+.address-item.selected {
+  background-color: #edeef3;
+}
+
+.address-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  cursor: pointer;
+}
+
+.address-details {
+  line-height: 1.5;
+}
+
+/* Container chứa dấu ba chấm và menu */
+.address-options-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Nút dấu ba chấm */
+.address-options {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #555;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.address-options:hover {
+  color: #000;
+}
+
+/* Ô menu delete hiển thị bên phải dấu ba chấm */
+.address-options-menu {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-30%, -50%);
+  background: white;
+  border: 1px solid #ccc;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-family: 'Georgia', serif;
+  font-size: 14px;
+  white-space: nowrap;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.address-options-menu .delete-btn {
+  background: none;
+  border: none;
+  color: #000;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.address-options-menu .delete-btn:hover {
+  text-decoration: underline;
+}
+
+/* Modal xác nhận xoá */
+.confirm-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border: 1px solid #ccc;
+  padding: 24px 32px;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  font-family: 'Georgia', serif;
+  text-align: center;
+}
+
+.confirm-modal button {
+  margin-top: 12px;
+  padding: 8px 16px;
+  font-weight: 500;
+  border: none;
+  background: #000;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.confirm-modal button:hover {
+  background: #444;
+}
+
+.confirm-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  /* 👈 tạo khoảng cách giữa Confirm và Cancel */
+  margin-top: 16px;
+}
+
+.confirm-btn,
+.cancel-btn {
+  padding: 8px 20px;
+  font-weight: 500;
+  border: none;
+  background: #000;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.confirm-btn:hover,
+.cancel-btn:hover {
+  background: #444;
+}
+
+.floating-alert {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px 30px;
+  border-radius: 8px;
+  z-index: 9999;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  text-align: center;
+
+  width: 360px;
+  /* ✅ Đặt chiều rộng cố định */
+  max-width: 90vw;
+  /* ✅ Giới hạn nếu màn nhỏ */
+
+  padding: 50px 20px;
+}

@@ -1,0 +1,92 @@
+.order-address-box {
+  background-color: #f0ebeb;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #f3f3f9;
+}
+
+.order-address-box h3 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.order-address-box p {
+  margin: 12px 40px;
+  font-size: 18px;
+}
+
+.order-address-box strong {
+  font-weight: bold;
+}
+
+.order-detail-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #f0ebeb;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.order-detail-icon {
+  font-size: 30px;
+}
+
+.order-detail-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.order-detail-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Georgia', serif;
+}
+
+.order-detail-table thead {
+  background: black;
+  color: white;
+}
+
+.order-detail-table th,
+.order-detail-table td {
+  padding: 12px 20px;
+  text-align: center;
+}
+
+.order-detail-table .even {
+  background-color: #f3f3f9;
+}
+
+.admin-table img {
+  height: 60px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* ✅ Dòng ORDER DETAILS căn giữa và nổi bật */
+.order-details-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 30px 0 25px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #333;
+}
+
+.product-cell {
+  text-align: left;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 20px;
+}
